@@ -18,7 +18,7 @@ export default class Model extends MK.Object {
 			obj: null
 		});
 
-		var color = collection.colors[collection.length % collection.colors.length]
+		var color = collection.colors[collection.length % collection.colors.length];
 
 		var geometry = new THREE.BoxGeometry(data.x, data.y, data.z);
 		var material = new THREE.MeshLambertMaterial({ 
@@ -27,7 +27,7 @@ export default class Model extends MK.Object {
 		});
 
 		this.obj = new THREE.Mesh(geometry, material);
-		this.obj.position.set(0,0,0)
+		this.obj.position.set(0,0,0);
 
 		scene.add(this.obj);
 	}

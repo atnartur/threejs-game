@@ -1,8 +1,7 @@
-import $ from 'jquery'
 import Detector from './three_components/Detector'
 
 import camera from './core/camera'
-import {container, init as container_init} from './core/container'
+import {init as container_init} from './core/container'
 import {init as controls_init} from './core/controls'
 import scene from './core/scene'
 import lights_init from './core/lights'

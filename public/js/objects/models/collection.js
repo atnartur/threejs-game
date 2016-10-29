@@ -2,7 +2,6 @@
 * @Author: Artur Atnagulov (ClienDDev team)
 */
 
-import $ from 'jquery'
 import MK from 'matreshka'
 import THREE from 'three'
 import ColorScheme from 'color-scheme'

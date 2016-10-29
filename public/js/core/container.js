@@ -2,7 +2,6 @@
 * @Author: Artur Atnagulov (ClienDDev team)
 */
 
-import $ from 'jquery';
 import {settings} from '../main'
 
 export var container;
