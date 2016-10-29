@@ -29,16 +29,16 @@ if(env != "development"){
 }
 
 var config = {
-	context: path.resolve(__dirname, '../public/js'),
+	context: path.resolve(__dirname, '../js'),
 		devtool: env == "development" ? "source-map" : null,
 		entry: [
 		// 'babel-polyfill',
 		'./main.js'
 	],
 		output: {
-		path: path.resolve(__dirname, '../public/dist'),
+		path: path.resolve(__dirname, '../dist'),
 			filename: 'all.min.js',
-			publicPath: '/public/'
+			publicPath: '/'
 	},
 	resolve: {
 		extensions: ['', '.js']
@@ -48,7 +48,7 @@ var config = {
 		loaders: [{
 			loaders: ['babel-loader?presets[]=es2015,presets[]=stage-0,plugins[]=transform-class-properties'],
 			include: [
-				path.resolve(__dirname, '../public/js')
+				path.resolve(__dirname, '../js')
 			]
 		}]
 	}

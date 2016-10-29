@@ -1,6 +1,5 @@
 node_modules
-public/libs
-public/dist/*.map
+dist/*.map
 *.log
 *.cache
 .idea
