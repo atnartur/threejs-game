@@ -1,6 +1,6 @@
 node_modules
 public/libs
-public/dist/
+public/dist/*.map
 *.log
 *.cache
 .idea
