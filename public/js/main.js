@@ -80,16 +80,10 @@ export function init(params) {
 		renderer.setSize(settings.width, settings.height);
 	}
 
-	gui_init();
 	animate();
-
-    $(window).keyup((e) => console.log(e.which));
 }
 
-
-$(document).ready(() => {
-	init();
-});
+$(document).ready(() => init());
 
 function animate() {
 	if(render())

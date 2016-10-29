@@ -35,6 +35,10 @@ export class ModelsCollection extends MK.Array {
                     this.click();
                     break;
             }
+        });
+
+        this.on('modify', () => {
+            $('#score').text(this.length - 2);
         })
 	}
 	click(){
@@ -118,9 +122,9 @@ export class ModelsCollection extends MK.Array {
 		});
 		
 		setTimeout(() => {
-			let latest = this.length - 1 
-			let prev = this.length - 2
-			
+			let latest = this.length - 1;
+			let prev = this.length - 2;
+
 			this[latest].obj.position.set(this[prev].obj.position.x, settings.block_size.y * (this.length - 1), this[prev].obj.position.z)
 			this[latest].move(this.direction);
 			console.log(camera);
