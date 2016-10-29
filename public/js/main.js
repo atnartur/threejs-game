@@ -57,7 +57,7 @@ export function init(params) {
 	for (let key in params)
 		settings[key] = params[key];
 
-	// controls_init();
+	controls_init();
 	container_init();
 	renderer_init();
 	models_init();
@@ -82,7 +82,6 @@ export function init(params) {
 		renderer.setSize(settings.width, settings.height);
 	}
 
-	
 	gui_init();
 	animate();
 }
@@ -106,7 +105,7 @@ function render() {
 		return true;
 	}
 	catch(e){
-		console.error(e)
+		console.error(e);
 		return false;   
 	}
 }

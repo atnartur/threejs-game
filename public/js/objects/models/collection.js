@@ -8,7 +8,7 @@ import THREE from 'three'
 import ColorScheme from 'color-scheme'
 import Model from './model'
 import {settings} from '../../main'
-import {camera} from '../../core/camera'
+import camera from '../../core/camera'
 
 export class ModelsCollection extends MK.Array {
 	Model = Model
