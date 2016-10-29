@@ -64,7 +64,7 @@ export function init(params) {
 
 	if(__DEV__){
 		stats_init();
-		base_helpers_init();
+		// base_helpers_init();
 	}
 
 	if(settings.width == '100%' && settings.height == '100%'){
@@ -84,6 +84,8 @@ export function init(params) {
 
 	gui_init();
 	animate();
+
+    $(window).keyup((e) => console.log(e.which));
 }
 
 

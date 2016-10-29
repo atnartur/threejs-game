@@ -4,9 +4,6 @@
 
 import MK from 'matreshka'
 import THREE from 'three'
-import $ from 'jquery'
-
-import {stand_in_front_of} from '../../core/camera'
 import scene from '../../core/scene'
 
 export default class Model extends MK.Object {
