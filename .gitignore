@@ -1,0 +1,6 @@
+node_modules
+public/libs
+public/dist/
+*.log
+*.cache
+.idea
