@@ -39,9 +39,9 @@ export default class Model extends MK.Object {
 			var step = 0.2
 
 			if(this.moveto == 1)
-				this.obj.position[dir] += step
+				this.obj.position[dir] += step;
 			else
-				this.obj.position[dir] -= step
+				this.obj.position[dir] -= step;
 
 			if(this.obj.position[dir] >= 100)
 				this.moveto = 0

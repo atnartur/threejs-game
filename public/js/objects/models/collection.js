@@ -38,9 +38,12 @@ export class ModelsCollection extends MK.Array {
         });
 
         this.on('modify', () => {
-            $('#score').text(this.length - 2);
+            $('#score').text(this.get_score());
         })
 	}
+	get_score(){
+        return this.length - 2;
+    }
 	click(){
 		console.group('click');
 		var dir = this.direction;
@@ -87,9 +90,9 @@ export class ModelsCollection extends MK.Array {
 
 		if(scale < 0){
 			latest.move_stop();
-			alert('Вы проиграли!');
+			alert('Игра завершена. Вы набрали ' + this.get_score() + ' очков');
 			location.reload();
-			return
+			return;
 		}
 
 		latest.obj.scale[dir] = scale;
