@@ -1,4 +1,3 @@
-import THREE from 'three'
 import $ from 'jquery'
 import Detector from './three_components/Detector'
 
@@ -10,7 +9,6 @@ import lights_init from './core/lights'
 import {renderer, init as renderer_init} from './core/renderer'
 
 import {stats, init as stats_init} from './misc/stats'
-import {gui, init as gui_init} from './misc/gui'
 
 import {init as base_helpers_init} from './objects/helpers'
 import {init as models_init, collection as models} from './objects/models/collection'

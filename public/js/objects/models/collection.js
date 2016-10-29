@@ -56,11 +56,11 @@ export class ModelsCollection extends MK.Array {
 		var prev_left = prev.obj.position[dir] - prev_size[dir] / 2;
 
 
-		console.log('latest size', latest_size)
-		console.log('prev size', prev_size)
+		console.log('latest size', latest_size);
+		console.log('prev size', prev_size);
 		console.log('latest left right', latest_left, latest_right);
 		console.log('prev left right', prev_left, prev_right);
-		console.log('dir', dir)
+		console.log('dir', dir);
 
 		var diff = 0;
 		var poz = 0;

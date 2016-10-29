@@ -3,7 +3,7 @@
 */
 
 import THREE from 'three'
-import '../three_components/OrbitControls'
+import orbit_controls from 'three-orbit-controls'
 import camera from  './camera'
 import {container} from  './container'
 
@@ -14,7 +14,8 @@ import {container} from  './container'
 export var controls;
 
 export function init(){
-	controls = new THREE.OrbitControls(camera, container);
+	var OrbitControls = orbit_controls(THREE);
+	controls = new OrbitControls(camera, container);
 	controls.enablePan = true;
 	controls.enableZoom = true;
 	controls.enableKeys = true;
