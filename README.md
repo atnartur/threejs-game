@@ -14,7 +14,9 @@
 ## Сборка
 
 `npm i` - установка зависимостей
+
 `gulp watch` - запуск dev-версии
+
 `gulp -e production` - production-сборка
 
 ## Авторы
